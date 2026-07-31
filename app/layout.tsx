@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-
+import { Analytics } from "@vercel/analytics/next"
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { blacklistUrl, fsUrl, site } from "@/lib/site";
@@ -106,6 +106,7 @@ export default function RootLayout({
         />
         <SiteHeader />
         <div className="flex-1">{children}</div>
+        <Analytics />
         <SiteFooter />
       </body>
     </html>
