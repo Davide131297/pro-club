@@ -1,4 +1,4 @@
-import { blacklistUrl, fsUrl } from "@/lib/site";
+import { fsUrl } from "@/lib/site";
 
 const steps = [
   {
@@ -9,15 +9,15 @@ const steps = [
   },
   {
     title: "Gegner finden",
-    text: "Tragt eure Wunschzeiten ein oder stellt eine direkte Spielanfrage. Nach dem Spiel meldet ihr das Ergebnis für die Tabelle.",
+    text: "Tragt eure Wunschzeiten ein oder stellt eine direkte Spielanfrage. Passende Gegner findet ihr über die automatische Spielsuche.",
     href: fsUrl,
     linkLabel: "Spiel suchen",
   },
   {
-    title: "Fair bleiben",
-    text: "Läuft ein Spiel unfair, könnt ihr das auf der Blacklist melden – und dort vorher prüfen, mit wem ihr es zu tun habt.",
-    href: blacklistUrl,
-    linkLabel: "Blacklist öffnen",
+    title: "Ergebnis melden",
+    text: "Nach dem Spiel tragt ihr das Ergebnis ein. Beide Teams bestätigen es, danach fließt es in die Gesamttabelle ein.",
+    href: fsUrl,
+    linkLabel: "Tabelle ansehen",
   },
 ];
 

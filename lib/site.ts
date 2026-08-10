@@ -17,7 +17,7 @@ export const site = {
   domain: "11vs11hub.de",
   tagline: "Die Tools der EA FC Pro Clubs Community",
   description:
-    "11vs11 Hub bündelt zwei Tools für EA FC Pro Clubs: Pro Club FS für Freundschaftsspiele, Matchmaking und Tabelle sowie die Pro Clubs Blacklist für gemeldete Spieler.",
+    "11vs11 Hub ist die Startseite für Pro Club FS: Freundschaftsspiele organisieren, Gegner finden, Ergebnisse melden und die Gesamttabelle verfolgen – für EA FC Pro Clubs.",
   url: clean(process.env.NEXT_PUBLIC_SITE_URL, DEFAULT_SITE_URL),
   discordUrl: clean(
     process.env.NEXT_PUBLIC_DISCORD_URL,
@@ -30,11 +30,6 @@ export const site = {
 export const fsUrl = clean(
   process.env.NEXT_PUBLIC_FS_URL,
   "https://fs.11vs11hub.de",
-);
-
-export const blacklistUrl = clean(
-  process.env.NEXT_PUBLIC_BLACKLIST_URL,
-  "https://blacklist.11vs11hub.de",
 );
 
 export function hostOf(url: string) {

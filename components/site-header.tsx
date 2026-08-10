@@ -4,7 +4,7 @@ import { Wordmark } from "@/components/logo";
 import { fsUrl } from "@/lib/site";
 
 const navItems = [
-  { href: "/#projekte", label: "Projekte" },
+  { href: "/#projekte", label: "Projekt" },
   { href: "/#features", label: "Vorteile" },
   { href: "/#so-gehts", label: "So geht's" },
   { href: "/#faq", label: "FAQ" },
@@ -42,7 +42,7 @@ export function SiteHeader() {
             href="/#projekte"
             className="rounded-lg px-3 py-2 text-sm text-zinc-400 transition-colors hover:text-white focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-hidden md:hidden"
           >
-            Projekte
+            Projekt
           </Link>
           <a
             href={fsUrl}

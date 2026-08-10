@@ -11,7 +11,7 @@ const features = [
   {
     icon: Gift,
     title: "Komplett kostenlos",
-    text: "Keine Gebühren, keine Premium-Stufen. Beide Projekte sind frei nutzbar.",
+    text: "Keine Gebühren, keine Premium-Stufen. Alle Funktionen sind frei nutzbar.",
   },
   {
     icon: MessagesSquare,
@@ -31,7 +31,7 @@ const features = [
   {
     icon: ShieldCheck,
     title: "Fair Play zuerst",
-    text: "Ergebnisse werden gegenseitig bestätigt, Meldungen brauchen einen echten Account.",
+    text: "Ergebnisse werden von beiden Teams bestätigt, bevor sie in der Tabelle landen.",
   },
   {
     icon: Sparkles,

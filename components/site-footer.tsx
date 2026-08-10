@@ -1,15 +1,12 @@
 import Link from "next/link";
 
 import { Wordmark } from "@/components/logo";
-import { blacklistUrl, fsUrl, hostOf, site } from "@/lib/site";
+import { fsUrl, hostOf, site } from "@/lib/site";
 
 const columns = [
   {
-    title: "Projekte",
-    links: [
-      { href: fsUrl, label: "Pro Club FS", external: true },
-      { href: blacklistUrl, label: "Pro Clubs Blacklist", external: true },
-    ],
+    title: "Projekt",
+    links: [{ href: fsUrl, label: "Pro Club FS", external: true }],
   },
   {
     title: "Community",
@@ -39,7 +36,7 @@ export function SiteFooter() {
           <div className="lg:col-span-1">
             <Wordmark />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-zinc-400">
-              Community-Tools für den Pro Clubs Modus in EA FC. Kostenlos, ohne
+              Community-Tool für den Pro Clubs Modus in EA FC. Kostenlos, ohne
               Download, direkt im Browser.
             </p>
           </div>
@@ -89,8 +86,7 @@ export function SiteFooter() {
       </div>
 
       <p className="sr-only">
-        Erreichbar unter {hostOf(site.url)}, {hostOf(fsUrl)} und{" "}
-        {hostOf(blacklistUrl)}.
+        Erreichbar unter {hostOf(site.url)} und {hostOf(fsUrl)}.
       </p>
     </footer>
   );

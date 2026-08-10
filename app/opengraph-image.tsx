@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-import { blacklistUrl, fsUrl, hostOf, site } from "@/lib/site";
+import { fsUrl, hostOf, site } from "@/lib/site";
 
 export const alt = `${site.name} – ${site.tagline}`;
 export const size = { width: 1200, height: 630 };
@@ -45,14 +45,14 @@ export default async function OpengraphImage() {
             Alles für deinen Pro Club.
           </div>
           <div style={{ fontSize: 34, color: "#a1a1aa" }}>
-            Freundschaftsspiele, Tabelle und Blacklist für EA FC Pro Clubs.
+            Freundschaftsspiele, Matchmaking und Tabelle für EA FC Pro Clubs.
           </div>
         </div>
 
         <div style={{ display: "flex", gap: 20, fontSize: 26, color: "#71717a" }}>
-          <div style={{ display: "flex" }}>{hostOf(fsUrl)}</div>
+          <div style={{ display: "flex" }}>{hostOf(site.url)}</div>
           <div style={{ display: "flex" }}>·</div>
-          <div style={{ display: "flex" }}>{hostOf(blacklistUrl)}</div>
+          <div style={{ display: "flex" }}>{hostOf(fsUrl)}</div>
         </div>
       </div>
     ),

@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next"
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { blacklistUrl, fsUrl, site } from "@/lib/site";
+import { fsUrl, site } from "@/lib/site";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,7 +30,6 @@ export const metadata: Metadata = {
     "11vs11",
     "Freundschaftsspiele",
     "Matchmaking",
-    "Blacklist",
     "Clubsuche",
     "Tabelle",
   ],
@@ -75,13 +74,6 @@ const jsonLd = {
       "@type": "WebApplication",
       name: "Pro Club FS",
       url: fsUrl,
-      applicationCategory: "SportsApplication",
-      operatingSystem: "Web",
-    },
-    {
-      "@type": "WebApplication",
-      name: "Pro Clubs Blacklist",
-      url: blacklistUrl,
       applicationCategory: "SportsApplication",
       operatingSystem: "Web",
     },

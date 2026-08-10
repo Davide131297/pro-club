@@ -4,17 +4,14 @@ import {
   Bot,
   CalendarClock,
   Check,
-  Gavel,
-  ListChecks,
   Search,
-  ShieldAlert,
   Swords,
   Table2,
   Users,
 } from "lucide-react";
 import type { ComponentType } from "react";
 
-import { blacklistUrl, fsUrl, hostOf } from "@/lib/site";
+import { fsUrl, hostOf } from "@/lib/site";
 
 type Project = {
   name: string;
@@ -56,29 +53,6 @@ const projects: Project[] = [
       icon: "text-blue-400",
     },
   },
-  {
-    name: "Pro Clubs Blacklist",
-    href: blacklistUrl,
-    tag: "Fair Play & Meldungen",
-    summary:
-      "Die Community-Liste für Spieler, die negativ auffallen. Gemeldet wird nur mit Discord-Login – hinter jeder Meldung steht ein echter Account.",
-    icon: ShieldAlert,
-    features: [
-      { icon: ListChecks, text: "Öffentliche, durchsuchbare Liste" },
-      { icon: Users, text: "Spieler mit Begründung melden" },
-      { icon: Bot, text: "Discord-Login gegen Fake-Meldungen" },
-      { icon: Gavel, text: "Einspruch für zu Unrecht gelistete Spieler" },
-      { icon: Search, text: "Hinweis auf wiederkehrende Muster" },
-      { icon: BellRing, text: "Sortiert nach Anzahl der Meldungen" },
-    ],
-    cta: "Zur Blacklist",
-    accent: {
-      ring: "hover:border-rose-500/50",
-      glow: "bg-rose-500/10",
-      chip: "border-rose-500/30 bg-rose-500/10 text-rose-300",
-      icon: "text-rose-400",
-    },
-  },
 ];
 
 export function Projects() {
@@ -87,19 +61,18 @@ export function Projects() {
       <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
         <div className="max-w-2xl">
           <h2 className="font-mono text-xs font-semibold tracking-wider text-zinc-500 uppercase">
-            Die Projekte
+            Das Projekt
           </h2>
           <p className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
-            Zwei Tools, ein Ziel: bessere Pro Clubs Spiele
+            Ein Tool, ein Ziel: bessere Pro Clubs Spiele
           </p>
           <p className="mt-3 text-sm leading-relaxed text-zinc-400 sm:text-base">
-            Jedes Projekt läuft auf einer eigenen Subdomain und lässt sich
-            unabhängig nutzen. Beide sind kostenlos und laufen direkt im
-            Browser.
+            Pro Club FS läuft auf einer eigenen Subdomain, ist kostenlos und
+            läuft direkt im Browser.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+        <div className="mt-10 grid gap-6">
           {projects.map((project) => {
             const Icon = project.icon;
 
@@ -137,7 +110,7 @@ export function Projects() {
                   {project.summary}
                 </p>
 
-                <ul className="mt-6 grid gap-3">
+                <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                   {project.features.map((feature) => (
                     <li key={feature.text} className="flex items-start gap-3">
                       <Check
