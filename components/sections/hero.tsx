@@ -1,6 +1,6 @@
-import { ArrowRight, ShieldAlert, Swords } from "lucide-react";
+import { ArrowRight, MessagesSquare, Swords } from "lucide-react";
 
-import { blacklistUrl, fsUrl } from "@/lib/site";
+import { fsUrl, site } from "@/lib/site";
 
 const highlights = [
   "Kostenlos",
@@ -37,9 +37,9 @@ export function Hero() {
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-pretty text-zinc-400 sm:mt-6 sm:text-lg">
-            11vs11 Hub ist die Startseite für zwei Community-Projekte rund um
-            den Pro Clubs Modus in EA FC: Freundschaftsspiele organisieren und
-            unfaire Mitspieler im Blick behalten.
+            11vs11 Hub ist die Startseite für unser Community-Projekt rund um
+            den Pro Clubs Modus in EA FC: Freundschaftsspiele organisieren,
+            Gegner finden und die Tabelle im Blick behalten.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:justify-center">
@@ -55,11 +55,12 @@ export function Hero() {
               />
             </a>
             <a
-              href={blacklistUrl}
+              href={site.discordUrl}
+              rel="noopener noreferrer"
               className="group inline-flex items-center justify-center gap-2 rounded-xl border border-zinc-700 bg-zinc-900/60 px-5 py-3 text-sm font-medium text-white transition-colors hover:border-zinc-600 hover:bg-zinc-900 focus-visible:ring-2 focus-visible:ring-zinc-500 focus-visible:outline-hidden"
             >
-              <ShieldAlert className="size-4" aria-hidden="true" />
-              Blacklist ansehen
+              <MessagesSquare className="size-4" aria-hidden="true" />
+              Discord beitreten
             </a>
           </div>
 

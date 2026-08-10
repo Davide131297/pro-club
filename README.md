@@ -1,11 +1,10 @@
 # 11vs11 Hub
 
-Landingpage für die Hauptdomain **11vs11hub.de**. Sie bündelt die beiden
-Community-Projekte rund um den Pro Clubs Modus in EA FC und verlinkt auf deren
-Subdomains:
+Landingpage für die Hauptdomain **11vs11hub.de**. Sie stellt das
+Community-Projekt rund um den Pro Clubs Modus in EA FC vor und verlinkt auf
+dessen Subdomain:
 
 - **Pro Club FS** – `fs.11vs11hub.de` (Freundschaftsspiele, Matchmaking, Tabelle)
-- **Pro Clubs Blacklist** – `blacklist.11vs11hub.de` (gemeldete Spieler, Einsprüche)
 
 ## Stack
 
@@ -46,7 +45,6 @@ Variablen greifen die Produktions-Defaults aus `lib/site.ts`. Vorlage:
 | ---------------------------- | ---------------------------------- | ---------------------------------- |
 | `NEXT_PUBLIC_SITE_URL`       | `https://11vs11hub.de`             | Canonical-URL, Sitemap, OG-Tags    |
 | `NEXT_PUBLIC_FS_URL`         | `https://fs.11vs11hub.de`          | Links zu Pro Club FS               |
-| `NEXT_PUBLIC_BLACKLIST_URL`  | `https://blacklist.11vs11hub.de`   | Links zur Blacklist                |
 | `NEXT_PUBLIC_DISCORD_URL`    | Discord-Invite                     | Community-Button                   |
 | `NEXT_PUBLIC_CONTACT_EMAIL`  | `proclubs-fs@proton.me`            | Kontakt in Footer, Impressum, DSE  |
 
@@ -54,7 +52,7 @@ Variablen greifen die Produktions-Defaults aus `lib/site.ts`. Vorlage:
 
 ```
 app/
-  page.tsx              Startseite (Hero, Projekte, Vorteile, Ablauf, FAQ)
+  page.tsx              Startseite (Hero, Projekt, Vorteile, Ablauf, FAQ)
   layout.tsx            Metadaten, Fonts, Header/Footer, JSON-LD
   impressum/            Impressum
   datenschutz/          Datenschutzerklärung
@@ -75,8 +73,8 @@ Root Directory belassen (Framework-Preset: Next.js). Anschließend die Domain
 optional, solange die Defaults stimmen.
 
 Die Landingpage ist bewusst eigenständig (eigenes Repository, eigene
-`package.json`, eigener Build) und teilt keinen Code mit den beiden
-Projekt-Repositories.
+`package.json`, eigener Build) und teilt keinen Code mit dem
+Projekt-Repository.
 
 ## Hinweis
 

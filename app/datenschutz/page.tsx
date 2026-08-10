@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { blacklistUrl, fsUrl, hostOf, site } from "@/lib/site";
+import { fsUrl, hostOf, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Datenschutz",
@@ -16,9 +16,9 @@ export default function DatenschutzPage() {
           Datenschutzerklärung
         </h1>
         <p className="mt-2 text-sm text-zinc-400">
-          Diese Erklärung gilt für die Startseite {site.domain}. Für die
-          Unterprojekte auf {hostOf(fsUrl)} und {hostOf(blacklistUrl)} gelten
-          die dort hinterlegten Datenschutzerklärungen.
+          Diese Erklärung gilt für die Startseite {site.domain}. Für das
+          Unterprojekt auf {hostOf(fsUrl)} gilt die dort hinterlegte
+          Datenschutzerklärung.
         </p>
 
         <div className="mt-8 space-y-8 text-sm leading-relaxed text-zinc-300">
@@ -94,12 +94,11 @@ export default function DatenschutzPage() {
               5. Externe Links
             </h2>
             <p className="mt-2 text-zinc-400">
-              Diese Seite verlinkt auf unsere Unterprojekte ({hostOf(fsUrl)},{" "}
-              {hostOf(blacklistUrl)}) sowie auf externe Angebote wie Discord.
-              Erst beim Klick auf einen solchen Link werden Daten an den
-              jeweiligen Anbieter übertragen. Auf deren Verarbeitung haben wir
-              keinen Einfluss; es gelten die Datenschutzhinweise des jeweiligen
-              Anbieters.
+              Diese Seite verlinkt auf unser Unterprojekt ({hostOf(fsUrl)})
+              sowie auf externe Angebote wie Discord. Erst beim Klick auf einen
+              solchen Link werden Daten an den jeweiligen Anbieter übertragen.
+              Auf deren Verarbeitung haben wir keinen Einfluss; es gelten die
+              Datenschutzhinweise des jeweiligen Anbieters.
             </p>
           </section>
 

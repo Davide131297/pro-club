@@ -4,17 +4,17 @@ export const faqItems = [
   {
     question: "Was ist 11vs11 Hub?",
     answer:
-      "11vs11 Hub ist die Startseite für zwei Community-Projekte rund um den Pro Clubs Modus in EA FC. Von hier kommst du zu Pro Club FS für Freundschaftsspiele und zur Pro Clubs Blacklist für gemeldete Spieler.",
+      "11vs11 Hub ist die Startseite für unser Community-Projekt rund um den Pro Clubs Modus in EA FC. Von hier kommst du zu Pro Club FS für Freundschaftsspiele, Matchmaking und Tabelle.",
   },
   {
     question: "Kostet die Nutzung etwas?",
     answer:
-      "Nein. Beide Projekte sind kostenlos nutzbar. Es gibt keine Bezahlfunktionen und keine Abos.",
+      "Nein. Pro Club FS ist kostenlos nutzbar. Es gibt keine Bezahlfunktionen und keine Abos.",
   },
   {
     question: "Brauche ich einen Account?",
     answer:
-      "Zum Stöbern nicht. Für eigene Teams und Spielanfragen brauchst du einen Account bei Pro Club FS, für Meldungen und Einsprüche auf der Blacklist einen Discord-Login.",
+      "Zum Stöbern nicht. Für eigene Teams und Spielanfragen brauchst du einen Account bei Pro Club FS – am schnellsten geht das per Discord-Login.",
   },
   {
     question: "Für welche Plattformen ist das gedacht?",
@@ -22,9 +22,9 @@ export const faqItems = [
       "Für alle. Ihr spielt EA FC auf PlayStation, Xbox oder PC – organisiert wird im Browser, am Handy genauso wie am Rechner.",
   },
   {
-    question: "Wie wird verhindert, dass Spieler zu Unrecht gemeldet werden?",
+    question: "Wie kommen die Ergebnisse in die Tabelle?",
     answer:
-      "Melden geht nur mit Discord-Login, damit hinter jeder Meldung ein echter Account steht. Wer gelistet ist, kann Einspruch einlegen. Zusätzlich wird auf wiederkehrende Muster hingewiesen, wenn ein Spieler mehrfach aus demselben Grund gemeldet wird.",
+      "Nach dem Spiel trägt ein Team das Ergebnis ein, das gegnerische Team bestätigt es. Erst danach fließt es in die Gesamttabelle ein – so kann kein Team seine Ergebnisse allein festlegen.",
   },
   {
     question: "Ist das ein offizielles Angebot von EA?",
