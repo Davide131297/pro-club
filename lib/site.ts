@@ -32,6 +32,11 @@ export const fsUrl = clean(
   "https://fs.11vs11hub.de",
 );
 
+export const statsUrl = clean(
+  process.env.NEXT_PUBLIC_STATS_URL,
+  "https://stats.11vs11hub.de",
+);
+
 export function hostOf(url: string) {
   return url.replace(/^https?:\/\//i, "").replace(/\/$/, "");
 }

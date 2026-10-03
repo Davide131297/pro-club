@@ -4,14 +4,16 @@ import {
   Bot,
   CalendarClock,
   Check,
+  BarChart3,
   Search,
+  Trophy,
   Swords,
   Table2,
   Users,
 } from "lucide-react";
 import type { ComponentType } from "react";
 
-import { fsUrl, hostOf } from "@/lib/site";
+import { fsUrl, hostOf, statsUrl } from "@/lib/site";
 
 type Project = {
   name: string;
@@ -53,6 +55,27 @@ const projects: Project[] = [
       icon: "text-blue-400",
     },
   },
+  {
+    name: "Pro Clubs Stats",
+    href: statsUrl,
+    tag: "Statistiken & Ranglisten",
+    summary:
+      "Sucht jeden Pro Club auf PS5, Xbox und PC, schaut euch Spiele, Spielerwerte und die Rangliste an und speichert eure Favoriten.",
+    icon: BarChart3,
+    features: [
+      { icon: Search, text: "Clubs per Name auf allen Plattformen finden" },
+      { icon: Users, text: "Spielerstatistiken und Kader im Überblick" },
+      { icon: CalendarClock, text: "Letzte Spiele mit Details und Ergebnissen" },
+      { icon: Trophy, text: "Rangliste der besten Clubs" },
+    ],
+    cta: "Zu Pro Clubs Stats",
+    accent: {
+      ring: "hover:border-emerald-500/50",
+      glow: "bg-emerald-500/10",
+      chip: "border-emerald-500/30 bg-emerald-500/10 text-emerald-300",
+      icon: "text-emerald-400",
+    },
+  },
 ];
 
 export function Projects() {
@@ -64,15 +87,15 @@ export function Projects() {
             Das Projekt
           </h2>
           <p className="mt-3 text-2xl font-semibold tracking-tight sm:text-3xl">
-            Ein Tool, ein Ziel: bessere Pro Clubs Spiele
+            Unsere Tools für bessere Pro Clubs Spiele
           </p>
           <p className="mt-3 text-sm leading-relaxed text-zinc-400 sm:text-base">
-            Pro Club FS läuft auf einer eigenen Subdomain, ist kostenlos und
-            läuft direkt im Browser.
+            Alle Projekte laufen auf eigenen Subdomains, sind kostenlos und
+            laufen direkt im Browser.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-6">
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {projects.map((project) => {
             const Icon = project.icon;
 

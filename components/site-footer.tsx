@@ -1,12 +1,15 @@
 import Link from "next/link";
 
 import { Wordmark } from "@/components/logo";
-import { fsUrl, hostOf, site } from "@/lib/site";
+import { fsUrl, statsUrl, hostOf, site } from "@/lib/site";
 
 const columns = [
   {
     title: "Projekt",
-    links: [{ href: fsUrl, label: "Pro Club FS", external: true }],
+    links: [
+      { href: fsUrl, label: "Pro Club FS", external: true },
+      { href: statsUrl, label: "Pro Clubs Stats", external: true },
+    ],
   },
   {
     title: "Community",
